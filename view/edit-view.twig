@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改用户信息</title>
+</head>
+<body align="center">
+<p>修改用户信息</p>
+<form name="form" method="post" action="?controller=User&action=up">
+    <label for="id"></label>
+    {% if user %}
+    <input type="hidden" name="id" id="id" value="{{ user.id }}">
+    <label for="name">姓名：</label>
+    <input type="text" name="name" id="name" value="{{ user.name }}" ><br>
+    <label for="sex">性别：</label>
+    <input type="text" name="sex" id="sex" value="{{ user.sex }}" ><br>
+    <label for="old">年龄：</label>
+    <input type="text" name="age" id="old" value="{{ user.age }}"  ><br>
+    <label for="comment">简介：</label>
+    <textarea id="comment" name="comment" >{{ user.comment }}</textarea>
+    {% endif %}
+    <input type="submit" value="提交">
+    <br>
+    <a href="index.html"><input type="button" value="返回首页"></a>
+    <a href="index.php?controller=User&action=list"> 返回查询页</a>
+
+</form>
+</body>
+</html>
+

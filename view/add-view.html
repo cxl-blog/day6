@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加用户</title>
+    <script src="../js/jqurey.js" type="text/javascript"></script>
+    <link href="../css/add-view.css" rel="stylesheet">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#submit").click(function () {
+                var sex;
+                if($("#sex1").is(":checked"))
+                    sex="男";
+                if($("#sex2").is(":checked"))
+                    sex="女";
+                    $.post("../index.php?controller=User&action=add", {
+                        'name': $('#name').val(),
+                        'sex': sex,
+                        'age': $('#age').val(),
+                        'comment': $('#comment').val()
+                    }, function (data,stusta) {
+                        alert(data);
+                        //window.location = "../index.php?controller&User&action=add";
+                    });
+
+
+
+
+
+            })
+        })
+
+    </script>
+</head>
+
+<body>
+<h2>添加用户</h2>
+<!--<form >-->
+<div class="index">
+<div class="add">
+    <form method="post">
+<div>
+    <label for="name">姓名：</label>
+    <input type="text" name="name" id="name" ><br>
+</div>
+    <div><span>性别：</span>
+    <label for="sex1">男</label>
+    <input type="radio" name="sex" id="sex1" >
+    <label for="sex2">女</label>
+    <input type="radio" name="sex" id="sex2">
+    </div>
+    <div>
+    <label for="age">年龄：</label>
+    <input type="text" name="age" id="age" ><br>
+    </div>
+    <div>
+    <label for="comment">简介：</label>
+    <textarea id="comment" name="comment"></textarea><br>
+    </div>
+    <input type="button" value="提交" id="submit">
+</form>
+    <a href="../index.html"><input type="button" value="返回首页"></a>
+<!--</form>-->
+</div>
+</div>
+</body>
+</html>

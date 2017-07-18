@@ -1,0 +1,23 @@
+{
+  "name": "day6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cxl-blog/day4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cxl-blog/day4/issues"
+  },
+  "homepage": "https://github.com/cxl-blog/day4#readme",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "webpack": "^3.3.0"
+  }
+}

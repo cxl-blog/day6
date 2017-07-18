@@ -1,0 +1,131 @@
+.index{
+    position: absolute;
+    width: 60%;
+    margin-left:20%;
+    text-align: center;
+    z-index: 1;
+}
+.center{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.filter{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    display: none;
+}
+.edit{
+    position: absolute;
+    top:100px;
+    left:35%;
+    height:auto;
+    width: 30%;
+    background-color: #f3ffeb;
+    display: none;
+    z-index:3;
+}
+.edit div{
+    float: left;
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+}
+.adduser{
+	position: absolute;
+	top:100px;
+	left:35%;
+	height:auto;
+	width: 30%;
+	background-color: #f3ffeb;
+	display: none;
+	z-index: 3;
+}
+.adduser div{
+    float: left;
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+}
+.index .nasmange{
+    width: 100%;
+    float: left;
+    height: auto;
+}
+.selesex{
+    float: left;
+}
+.seachuser{
+    float: right;
+
+
+}
+.table{
+    width: 100%;
+    float: left;
+
+
+}
+.tablehead{
+    width: 100%;
+    float: left;
+    background-color: #67e4ff;
+    border: 2px solid #5885ff;
+    color: white;
+    padding: 2px;
+}
+.tablebody{
+    width: 100%;
+    float: left;
+    border: 2px solid #5885ff;
+    padding: 2px;
+}
+.line{
+    width: 100%;
+    float: left;
+}
+.id{
+    width: 10%;
+    float: left;
+}
+.name{
+    width: 10%;
+    float: left;
+}
+.sex{
+    width: 10%;
+    float: left;
+}
+.age{
+    width: 10%;
+    float: left;
+}
+.comment{
+    width: 40%;
+    float: left;
+}
+.line .mange{
+     float: right;
+    text-align: center;
+    left: 80%;
+}
+.mange a{
+}
+body{
+    background: url("../img/img2.jpg");
+}
+#mange1 input{
+    background-color: #67e4ff;
+}
+#mange2 input{
+    background-color: #ff3527;
+}
+a{
+    background-color: #67e4ff;
+    color: #f3ffeb;
+    cursor: pointer;
+}
